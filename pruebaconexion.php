@@ -11,12 +11,7 @@ $db = mysqli_select_db($conexion, $basededatos) or die("Error al conectarnos a l
 $consulta = "SELECT * FROM preguntafrecuente";
 
 $resultado = mysqli_query($conexion, $consulta) or die ("Se presento un problema en la consulta");
-
-while ($registro = mysqli_fetch_array( $resultado )) {
-
-	echo "<br/>".utf8_encode($registro['descripcion']);
-
-}
+include ("presentacion.php");
 
 mysqli_close($conexion);
 ?>
