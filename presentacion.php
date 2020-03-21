@@ -7,4 +7,6 @@ while ($registro = mysqli_fetch_array( $resultado )) {
 
 }
 echo "</table>";
+
 ?>
+<p>Error</p>
